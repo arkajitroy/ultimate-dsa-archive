@@ -1,4 +1,4 @@
-package Graph_Problems;
+package Dynamic_Programming;
 
 class Main{
     public static int climbStairs(int n) {

@@ -1,4 +1,4 @@
-package Graph_Problems;
+package Dynamic_Programming;
 
 import java.util.ArrayList;
 import java.util.Collections;
