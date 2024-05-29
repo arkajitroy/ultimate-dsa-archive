@@ -49,8 +49,8 @@ class Main{
         root.left.left = new TreeNode(4);
         root.left.right = new TreeNode(5);
         root.right = new TreeNode(3);
-        root.right.left = new TreeNode(4);
-        root.right.right = new TreeNode(5);
+        root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(7);
 
         System.out.println("Level Order Traversal: " + levelOrderTraversal(root));
     }
