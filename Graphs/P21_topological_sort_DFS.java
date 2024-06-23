@@ -4,15 +4,18 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 class Main {
-    public static int[] topologicalSort(int V, ArrayList<ArrayList<Integer>> adj){
+    public static int[] topologicalSort(int numVertices, ArrayList<ArrayList<Integer>> adj){
         Stack<Integer> stack = new Stack<>();
-        boolean[] visited = new boolean[V];
-        int[] topologicalOrder = new int[V];
+        boolean[] visited = new boolean[numVertices];
+        int[] topologicalOrder = new int[numVertices];
 
-        // performing DFS from each vertex
-        for(int node=0; node<V; node++){
-            if(!visited[node]) dfsCheck(node, visited, stack, adj);
+        // Perform DFS from each vertex
+        for (int node = 0; node < numVertices; node++) {
+            if (!visited[node]) {
+                performDFS(node, visited, stack, adj);
+            }
         }
+
         int index = 0;
         while (!stack.isEmpty()) {
             topologicalOrder[index++] = stack.pop();
@@ -21,14 +24,17 @@ class Main {
         return topologicalOrder;
     }
 
-    private static void dfsCheck(int V, boolean[] visited, Stack<Integer> stack, ArrayList<ArrayList<Integer>> adj){
-        visited[V] = true;
+    private static void performDFS(int vertex, boolean[] visited, Stack<Integer> stack, ArrayList<ArrayList<Integer>> adj) {
+        visited[vertex] = true;
 
-        // recursively call all the adjacent vertices
-        for(int neighbor : adj.get(V)){
-            if(!visited[neighbor]) dfsCheck(neighbor, visited, stack, adj);
+        // Recursively call all adjacent vertices
+        for (int neighbor : adj.get(vertex)) {
+            if (!visited[neighbor]) {
+                performDFS(neighbor, visited, stack, adj);
+            }
         }
-        stack.push(V);
+
+        stack.push(vertex);
     }
 
     public static void main(String[] args) {
