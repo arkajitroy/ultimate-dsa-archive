@@ -27,7 +27,7 @@ class Main{
             if(dfsCheck(neighbor, visited, pathVisited, adj)) return true;
         }
 
-        // removing the vertex from path-visited
+        // removing the vertex from path-visited 
         pathVisited[vertex] = false;
         return false;
     }
