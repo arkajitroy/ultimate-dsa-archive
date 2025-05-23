@@ -62,3 +62,6 @@ This covers important DSA patterns such as:
 ### Miscallenous Questions
 
 26. [Reverse odd levels of binary tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/)
+27. [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/) - _Leetcode 199_
+28. [Search in Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/description/)
+29. [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/description/)
