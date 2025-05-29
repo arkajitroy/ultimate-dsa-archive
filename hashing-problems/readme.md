@@ -39,7 +39,7 @@ Absolutely! Here's a curated list of 20 commonly asked hashing-related interview
 
 ## 📚 GeeksforGeeks Hashing Interview Questions
 
-1. [**Largest subarray with 0 sum**](https://www.geeksforgeeks.org/largest-subarray-with-0-sum/)
+1. [**Largest subarray with 0 sum**](https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1)
    - _Level:_ Medium
    - _Concept:_ Prefix sum with HashMap.
 2. [**Check if an array is subset of another array**](https://www.geeksforgeeks.org/check-if-an-array-is-subset-of-another-array-using-hashing/)
