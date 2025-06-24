@@ -16,7 +16,7 @@ These problems are carefully selected from LeetCode, GeeksforGeeks, and Striver'
 | 7.    | [Course Schedule](https://leetcode.com/problems/course-schedule/)                                                                             | LeetCode   | Medium     | Topological Sort             |
 | 8.    | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)                                                                       | LeetCode   | Medium     | Topological Sort             |
 | 9.    | [Alien Dictionary](https://practice.geeksforgeeks.org/problems/alien-dictionary/1)                                                            | GFG        | Hard       | Topological Sort             |
-| 10.   | [Kahn's Algorithm](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/)                                                | GFG        | Medium     | Topological Sort             |
+| 10.   | [Shortest Path in Directed Asyclic Graph](https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/1)                         | GFG        | Medium     | Topological Sort             |
 | 11.   | [Shortest Path in Undirected Graph with Unit Weights](https://www.geeksforgeeks.org/shortest-path-unweighted-graph/)                          | GFG        | Easy       | BFS                          |
 | 12.   | [Dijkstra’s Algorithm](https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1)                            | GFG        | Medium     | Dijkstra (Min Heap)          |
 | 13.   | [Bellman Ford Algorithm](https://practice.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1)                       | GFG        | Medium     | Bellman-Ford                 |
