@@ -42,7 +42,7 @@ class LinkedListSolutions {
     // ============================== Easy Level Problems ==============================
 
     // 1. Reverse a Linked List (LeetCode #206)
-    public ListNode reverseList(ListNode head) {
+     ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;
         while (curr != null) {
@@ -55,7 +55,7 @@ class LinkedListSolutions {
     }
 
     // 2. Middle of the Linked List (LeetCode #876)
-    public ListNode middleNode(ListNode head) {
+     ListNode middleNode(ListNode head) {
         ListNode slow = head, fast = head;
         while (fast != null && fast.next != null) {
             slow = slow.next;
@@ -65,7 +65,7 @@ class LinkedListSolutions {
     }
 
     // 3. Remove Duplicates from Sorted List (LeetCode #83)
-    public ListNode deleteDuplicates(ListNode head) {
+     ListNode deleteDuplicates(ListNode head) {
         ListNode curr = head;
         while (curr != null && curr.next != null) {
             if (curr.val == curr.next.val) {
@@ -78,13 +78,13 @@ class LinkedListSolutions {
     }
 
     // 4. Delete Node in a Linked List (LeetCode #237)
-    public void deleteNode(ListNode node) {
+     void deleteNode(ListNode node) {
         node.val = node.next.val;
         node.next = node.next.next;
     }
 
     // 5. Linked List Cycle (LeetCode #141)
-    public boolean hasCycle(ListNode head) {
+     boolean hasCycle(ListNode head) {
         ListNode slow = head, fast = head;
         while (fast != null && fast.next != null) {
             slow = slow.next;
@@ -95,7 +95,7 @@ class LinkedListSolutions {
     }
 
     // 6. Merge Two Sorted Lists (LeetCode #21)
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+     ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
         ListNode curr = dummy;
         while (l1 != null && l2 != null) {
@@ -113,7 +113,7 @@ class LinkedListSolutions {
     }
 
     // 7. Remove Linked List Elements (LeetCode #203)
-    public ListNode removeElements(ListNode head, int val) {
+     ListNode removeElements(ListNode head, int val) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode curr = dummy;
@@ -128,7 +128,7 @@ class LinkedListSolutions {
     }
 
     // 8. Palindrome Linked List (LeetCode #234)
-    public boolean isPalindrome(ListNode head) {
+     boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) return true;
         // Find middle
         ListNode slow = head, fast = head;
@@ -149,7 +149,7 @@ class LinkedListSolutions {
     }
 
     // 9. Delete Alternate Nodes of a Linked List (GeeksforGeeks)
-    public void deleteAlternate(ListNode head) {
+     void deleteAlternate(ListNode head) {
         if (head == null || head.next == null) return;
         ListNode curr = head;
         while (curr != null && curr.next != null) {
@@ -159,7 +159,7 @@ class LinkedListSolutions {
     }
 
     // 10. Count Occurrences in a Linked List (GeeksforGeeks)
-    public int countOccurrences(ListNode head, int key) {
+     int countOccurrences(ListNode head, int key) {
         int count = 0;
         ListNode curr = head;
         while (curr != null) {
@@ -172,7 +172,7 @@ class LinkedListSolutions {
     // ============================== Medium Level Problems ==============================
 
     // 11. Remove Nth Node From End of List (LeetCode #19)
-    public ListNode removeNthFromEnd(ListNode head, int n) {
+     ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode first = dummy, second = dummy;
@@ -188,7 +188,7 @@ class LinkedListSolutions {
     }
 
     // 12. Swap Nodes in Pairs (LeetCode #24)
-    public ListNode swapPairs(ListNode head) {
+     ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) return head;
         ListNode next = head.next;
         ListNode rest = swapPairs(next.next);
@@ -198,7 +198,7 @@ class LinkedListSolutions {
     }
 
     // 13. Odd Even Linked List (LeetCode #328)
-    public ListNode oddEvenList(ListNode head) {
+     ListNode oddEvenList(ListNode head) {
         if (head == null) return null;
         ListNode odd = head, even = head.next, evenHead = even;
         while (even != null && even.next != null) {
@@ -212,7 +212,7 @@ class LinkedListSolutions {
     }
 
     // 14. Partition List (LeetCode #86)
-    public ListNode partition(ListNode head, int x) {
+     ListNode partition(ListNode head, int x) {
         ListNode before = new ListNode(0), after = new ListNode(0);
         ListNode beforeCurr = before, afterCurr = after;
         while (head != null) {
@@ -231,7 +231,7 @@ class LinkedListSolutions {
     }
 
     // 15. Intersection of Two Linked Lists (LeetCode #160)
-    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+     ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) return null;
         ListNode a = headA, b = headB;
         while (a != b) {
@@ -242,7 +242,7 @@ class LinkedListSolutions {
     }
 
     // 16. Rotate List (LeetCode #61)
-    public ListNode rotateRight(ListNode head, int k) {
+     ListNode rotateRight(ListNode head, int k) {
         if (head == null || head.next == null || k == 0) return head;
         // Find length and last node
         ListNode curr = head;
@@ -265,7 +265,7 @@ class LinkedListSolutions {
     }
 
     // 17. Add Two Numbers (LeetCode #2)
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+     ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
         ListNode curr = dummy;
         int carry = 0;
@@ -287,7 +287,7 @@ class LinkedListSolutions {
     }
 
     // 18. Detect and Remove Loop in a Linked List (GeeksforGeeks)
-    public void detectAndRemoveLoop(ListNode head) {
+     void detectAndRemoveLoop(ListNode head) {
         if (head == null || head.next == null) return;
         ListNode slow = head, fast = head;
         // Detect loop
@@ -311,7 +311,7 @@ class LinkedListSolutions {
     }
 
     // 19. Reverse a Doubly Linked List (GeeksforGeeks)
-    public DoublyLinkedListNode reverseDoublyList(DoublyLinkedListNode head) {
+     DoublyLinkedListNode reverseDoublyList(DoublyLinkedListNode head) {
         if (head == null || head.next == null) return head;
         DoublyLinkedListNode curr = head, temp = null;
         while (curr != null) {
@@ -324,7 +324,7 @@ class LinkedListSolutions {
     }
 
     // 20. Segregate Even and Odd Nodes in a Linked List (GeeksforGeeks)
-    public ListNode segregateEvenOdd(ListNode head) {
+     ListNode segregateEvenOdd(ListNode head) {
         ListNode evenStart = null, evenEnd = null, oddStart = null, oddEnd = null;
         ListNode curr = head;
         while (curr != null) {
@@ -356,7 +356,7 @@ class LinkedListSolutions {
     // ============================== Hard Level Problems ==============================
 
     // 21. Merge k Sorted Lists (LeetCode #23)
-    public ListNode mergeKLists(ListNode[] lists) {
+     ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length == 0) return null;
         java.util.PriorityQueue<ListNode> pq = new java.util.PriorityQueue<>((a, b) -> a.val - b.val);
         for (ListNode list : lists) {
@@ -374,7 +374,7 @@ class LinkedListSolutions {
     }
 
     // 22. Copy List with Random Pointer (LeetCode #138)
-    public Node copyRandomList(Node head) {
+     Node copyRandomList(Node head) {
         if (head == null) return null;
         // Step 1: Interweave original and copied nodes
         Node curr = head;
@@ -406,7 +406,7 @@ class LinkedListSolutions {
     }
 
     // 23. Reverse Nodes in k-Group (LeetCode #25)
-    public ListNode reverseKGroup(ListNode head, int k) {
+     ListNode reverseKGroup(ListNode head, int k) {
         if (head == null || k == 1) return head;
         ListNode curr = head;
         int count = 0;
@@ -439,7 +439,7 @@ class LinkedListSolutions {
         private DNode head, tail;
         private int capacity;
 
-        public LRUCache(int capacity) {
+         LRUCache(int capacity) {
             this.capacity = capacity;
             map = new java.util.HashMap<>();
             head = new DNode(0, 0);
@@ -448,14 +448,14 @@ class LinkedListSolutions {
             tail.prev = head;
         }
 
-        public int get(int key) {
+         int get(int key) {
             DNode node = map.get(key);
             if (node == null) return -1;
             moveToFront(node);
             return node.value;
         }
 
-        public void put(int key, int value) {
+         void put(int key, int value) {
             DNode node = map.get(key);
             if (node != null) {
                 node.value = value;
@@ -491,7 +491,7 @@ class LinkedListSolutions {
     }
 
     // 25. Flatten a Multilevel Doubly Linked List (LeetCode #430)
-    public DoublyLinkedListNode flatten(DoublyLinkedListNode head) {
+     DoublyLinkedListNode flatten(DoublyLinkedListNode head) {
         DoublyLinkedListNode curr = head;
         while (curr != null) {
             if (curr.child != null) {
@@ -510,17 +510,17 @@ class LinkedListSolutions {
 
     // 26. Clone a Linked List with Next and Random Pointer (GeeksforGeeks)
     // Same as LeetCode #138, reusing copyRandomList
-    public Node cloneListWithRandom(Node head) {
+     Node cloneListWithRandom(Node head) {
         return copyRandomList(head);
     }
 
     // 27. Reverse a Linked List in Groups of Given Size (GeeksforGeeks)
-    public ListNode reverseInGroups(ListNode head, int k) {
+     ListNode reverseInGroups(ListNode head, int k) {
         return reverseKGroup(head, k); // Same as LeetCode #25
     }
 
     // 28. Flattening a Linked List (GeeksforGeeks)
-    public MultiLevelNode flattenMultiLevelList(MultiLevelNode head) {
+     MultiLevelNode flattenMultiLevelList(MultiLevelNode head) {
         if (head == null) return null;
         MultiLevelNode curr = head;
         while (curr != null) {
@@ -539,7 +539,7 @@ class LinkedListSolutions {
     }
 
     // 29. Delete Nodes Which Have a Greater Value on Right Side (GeeksforGeeks)
-    public ListNode deleteNodesGreaterOnRight(ListNode head) {
+     ListNode deleteNodesGreaterOnRight(ListNode head) {
         if (head == null || head.next == null) return head;
         // Reverse the list
         head = reverseList(head);
@@ -559,7 +559,7 @@ class LinkedListSolutions {
     }
 
     // 30. Add 1 to a Number Represented as Linked List (GeeksforGeeks)
-    public ListNode addOne(ListNode head) {
+     ListNode addOne(ListNode head) {
         // Reverse the list
         head = reverseList(head);
         ListNode curr = head;
