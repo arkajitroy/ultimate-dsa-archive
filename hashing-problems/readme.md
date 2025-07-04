@@ -49,8 +49,11 @@ Absolutely! Here's a curated list of 20 commonly asked hashing-related interview
    - _Level:_ Medium
    - _Concept:_ Sliding window with HashMap.
 4. [**Find the smallest window in a string containing all characters of another string**](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
+
+   - Leetcode Problem **(Alternative Link)**: [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
    - _Level:_ Hard
    - _Concept:_ Sliding window with frequency map.
+
 5. [**Longest subarray with equal number of 0s and 1s**](https://www.geeksforgeeks.org/longest-subarray-equal-number-0s-1s/)
    - _Level:_ Medium
    - _Concept:_ Prefix sum with HashMap.
@@ -64,8 +67,10 @@ Absolutely! Here's a curated list of 20 commonly asked hashing-related interview
    - _Level:_ Medium
    - _Concept:_ Prefix sum with HashMap.
 9. [**Union and Intersection of two unsorted arrays**](https://www.geeksforgeeks.org/union-and-intersection-of-two-unsorted-arrays/)
-   - _Level:_ Easy
-   - _Concept:_ HashSet for union and intersection.
+
+- _Level:_ Easy
+- _Concept:_ HashSet for union and intersection.
+
 10. [**Find the length of the longest substring without repeating characters**](https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/)
     - _Level:_ Medium
     - _Concept:_ Sliding window with HashMap.
