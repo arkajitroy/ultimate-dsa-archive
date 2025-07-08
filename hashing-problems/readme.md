@@ -54,7 +54,7 @@ Absolutely! Here's a curated list of 20 commonly asked hashing-related interview
    - _Level:_ Hard
    - _Concept:_ Sliding window with frequency map.
 
-5. [**Longest subarray with equal number of 0s and 1s**](https://www.geeksforgeeks.org/longest-subarray-equal-number-0s-1s/)
+5. [**Longest subarray with equal number of 0s and 1s OR Contiguous Array**](https://leetcode.com/problems/contiguous-array/description/)
    - _Level:_ Medium
    - _Concept:_ Prefix sum with HashMap.
 6. [**Find Itinerary from a given list of tickets**](https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/)

@@ -1,52 +1,54 @@
-import java.util.*;
 
-// Complexity : TC - O(n_log_n) + O(n^2) = O(n^2), SC - O(1)
+// Optimal Approach: using sorting + two pointers
+// complexity: 2(n log n) + O(n) = O(2n)| O(1)
+
+import java.util.Arrays;
 
 class Solution {
     static int findPlatform(int arr[], int dep[]) {
+        // sorting the arrival and dept arrays
         Arrays.sort(arr);
         Arrays.sort(dep);
 
-        int result = 1, n = arr.length;
+        int maxPlatform = 1, platform = 1;
+        int i=0, j=0, n = arr.length;
 
-        for (int i = 1; i < n; i++) {
-            int count = 1;
-
-            for (int j = 0; j < i; j++) {
-                if (arr[i] <= dep[j]) {
-                    count++;
-                }
+        // Looping through both the arrays
+        while (i < n && j < n) {
+            // If someone is arriving then we will platform++
+            if(arr[i] <= dep[j]){
+                maxPlatform++;
+                i++;
             }
-
-            result = Math.max(result, count);
+            // if someone is leaving then we will do clearing
+            else{
+                maxPlatform--;
+                j++;
+            }
+            maxPlatform = Math.max(maxPlatform, platform);
         }
-
-        return result;
+        return maxPlatform;
     }
 }
 
-// Complexity : TC - O(2 n_log_n) + O(n) = O(n_log_n), SC - O(1)
-
+// Brute Force: using two pointers
+// complexity: O(n^2) | O(1)
 class Solution2 {
     static int findPlatform(int arr[], int dep[]) {
-        Arrays.sort(arr);
-        Arrays.sort(dep);
+        int maxPlatform = 0;
 
-        int platform_needed = 1, max_platforms = 1, n = arr.length;;
-        int i = 1, j = 0;
-
-        while (i < n && j < n) {
-            if (arr[i] <= dep[j]) {
-                platform_needed++;
-                i++;
-            } else {
-                platform_needed--;
-                j++;
+        for(int i=0; i<arr.length-1; i++){
+            int platform = 1;
+            for(int j=0; j<arr.length; j++){
+                // ignore same index, j will increase
+                if(i == j) continue;
+                // if the app time is greater than next train
+                if(arr[i] >= arr[j] && arr[i] <= dep[j]){
+                    platform++;
+                }
             }
-
-            max_platforms = Math.max(max_platforms, platform_needed);
+            maxPlatform = Math.max(maxPlatform, platform);
         }
-
-        return max_platforms;
+        return maxPlatform;
     }
 }
