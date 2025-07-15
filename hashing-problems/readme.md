@@ -77,6 +77,15 @@ Absolutely! Here's a curated list of 20 commonly asked hashing-related interview
 
 ---
 
+## Miscellenous Questions
+
+1. [**Valid Sudoku**](https://leetcode.com/problems/valid-sudoku/description/)
+
+- Level: Medium
+- Concept: using hashset
+
+---
+
 These problems are frequently asked in SDE-1 interviews at product-based companies. Practicing them will strengthen your understanding of hashing concepts and improve your problem-solving skills.
 
 If you need further assistance with any of these problems or want to explore more topics, feel free to ask!
