@@ -21,7 +21,7 @@
 | 17  | [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)                                       | Easy       | LeetCode      | Two Pointers + Hashing               |
 | 18  | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)                                                   | Easy       | LeetCode      | Two Pointers (Merge Sort-like)       |
 | 19  | [Sort Colors](https://leetcode.com/problems/sort-colors/)                                                                               | Medium     | LeetCode      | Dutch Flag (Three Pointers)          |
-| 20  | [Pair with a given sum in a sorted array](https://www.geeksforgeeks.org/two-pointers-technique/)                                        | Easy       | GeeksforGeeks | Classic Two Pointers                 |
+| 20  | [Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)               | Easy       | leetCode      | Classic Two Pointers                 |
 | 21  | [Count pairs with given sum](https://www.geeksforgeeks.org/count-pairs-with-given-sum/)                                                 | Easy       | GeeksforGeeks | Two Pointers + Hashing               |
 | 22  | [Count number of subarrays with exactly K distinct integers](https://leetcode.com/problems/subarrays-with-k-different-integers/)        | Hard       | LeetCode      | Sliding Window + Inclusion-Exclusion |
 | 23  | [Move Zeroes](https://leetcode.com/problems/move-zeroes/)                                                                               | Easy       | LeetCode      | Two Pointers (In-place)              |

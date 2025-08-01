@@ -84,6 +84,11 @@ Absolutely! Here's a curated list of 20 commonly asked hashing-related interview
 - Level: Medium
 - Concept: using hashset
 
+2. [**Count Elements With Maximum Frequency**](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
+
+- Level: Easy
+- Concept: using hashmap
+
 ---
 
 These problems are frequently asked in SDE-1 interviews at product-based companies. Practicing them will strengthen your understanding of hashing concepts and improve your problem-solving skills.
