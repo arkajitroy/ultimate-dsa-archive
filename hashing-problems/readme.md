@@ -60,7 +60,7 @@ Absolutely! Here's a curated list of 20 commonly asked hashing-related interview
 6. [**Find Itinerary from a given list of tickets**](https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/)
    - _Level:_ Medium
    - _Concept:_ Graph traversal using HashMap.
-7. [**Symmetric Pairs in an array**](https://www.geeksforgeeks.org/find-symmetric-pairs-in-an-array/)
+7. [**Symmetric Pairs in an array**](https://www.geeksforgeeks.org/dsa/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/)
    - _Level:_ Easy
    - _Concept:_ HashMap for pair detection.
 8. [**Count subarrays with equal number of 1s and 0s**](https://www.geeksforgeeks.org/count-subarrays-equal-number-1s-0s/)
