@@ -50,29 +50,30 @@ Awesome! Here's a solid practice set of **30+ array problems** curated from **Le
 #### 🔁 **Sliding Window**
 
 20. [Maximum Sum Subarray of Size K](https://www.geeksforgeeks.org/window-sliding-technique/) _(GFG)_
-21. [Longest Subarray of Sum K (with positive integers)](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
-22. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) — _LeetCode #3_
+21. [Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/) _Leetcode_
+22. [Longest Subarray of Sum K (with positive integers)](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
+23. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) — _LeetCode #3_
 
 #### 🔁 **Hashing / Frequency**
 
-23. [Two Sum](https://leetcode.com/problems/two-sum/) — _LeetCode #1_
-24. [Majority Element](https://leetcode.com/problems/majority-element/) — _LeetCode #169_
-25. [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) — _LeetCode #349_
-26. [Group Anagrams (Hashing)](https://leetcode.com/problems/group-anagrams/) — _LeetCode #49_
+24. [Two Sum](https://leetcode.com/problems/two-sum/) — _LeetCode #1_
+25. [Majority Element](https://leetcode.com/problems/majority-element/) — _LeetCode #169_
+26. [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) — _LeetCode #349_
+27. [Group Anagrams (Hashing)](https://leetcode.com/problems/group-anagrams/) — _LeetCode #49_
 
 #### 🔁 **Matrix as 2D Array**
 
-27. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) — _LeetCode #54_
-28. [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) — _LeetCode #73_
-29. [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) — _LeetCode #74_
+28. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) — _LeetCode #54_
+29. [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) — _LeetCode #73_
+30. [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) — _LeetCode #74_
 
 #### 🔁 **Greedy / Misc**
 
-30. [Jump Game](https://leetcode.com/problems/jump-game/) — _LeetCode #55_
-31. [Merge Intervals](https://leetcode.com/problems/merge-intervals/) — _LeetCode #56_
-32. [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) — _LeetCode #121_
+31. [Jump Game](https://leetcode.com/problems/jump-game/) — _LeetCode #55_
+32. [Merge Intervals](https://leetcode.com/problems/merge-intervals/) — _LeetCode #56_
+33. [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) — _LeetCode #121_
 
 #### 🔁 **Selective Hard (but famous and worth solving)**
 
-33. [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) — _LeetCode #4_
-34. [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) — _LeetCode #42_
+34. [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) — _LeetCode #4_
+35. [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) — _LeetCode #42_
