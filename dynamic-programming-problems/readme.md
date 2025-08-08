@@ -8,6 +8,7 @@
 | 4   | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                                           | LeetCode | Easy       | DP with state compression      |
 | 5   | [Unique Paths](https://leetcode.com/problems/unique-paths/)                                                                                 | LeetCode | Medium     | Grid DP                        |
 | 6   | [Coin Change](https://leetcode.com/problems/coin-change/)                                                                                   | LeetCode | Medium     | Unbounded knapsack             |
+| 6a  | [Coin Change II](https://leetcode.com/problems/coin-change-ii/description/)                                                                 | LeetCode | Medium     | Unbounded knapsack             |
 | 7   | [Word Break](https://leetcode.com/problems/word-break/)                                                                                     | LeetCode | Medium     | DP + backtracking/memo         |
 | 8   | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)                                             | LeetCode | Medium     | DP / Patience sort             |
 | 9   | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)                                                     | LeetCode | Medium     | 2D DP                          |
