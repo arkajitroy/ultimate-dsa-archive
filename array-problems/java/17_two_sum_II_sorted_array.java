@@ -25,7 +25,7 @@ class Solution2 {
         
         for(int i=0; i<size; i++){
             int complementary = target - numbers[i];
-            int index = computeSearch(complementary, numbers, index+1, size-1);
+            int index = computeSearch(complementary, numbers, i+1, size-1);
             if(index != -1){
                 return new int[]{ i+1, index+1 };
             }

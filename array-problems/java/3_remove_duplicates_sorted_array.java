@@ -3,7 +3,9 @@
 // Approach 1: HashSet
 // Complexity : O(3n) | O(n)
 
-class Solution {
+import java.util.HashSet;
+
+class Solution2 {
     public int removeDuplicates(int[] nums) {
         HashSet<Integer> set = new HashSet<>();
         int n = nums.length;
