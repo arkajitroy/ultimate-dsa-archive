@@ -32,3 +32,5 @@
 | 28  | [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)                                                                   | Easy       | LeetCode | Two Pointers + Stack Simulation      |
 | 29  | [Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/)                                         | Hard       | LeetCode | Sliding Window + Deque               |
 | 30  | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/)                                                                         | Medium     | LeetCode | Sliding Window + Set                 |
+| 31  | [Max Sum Subarray of size K](https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1)                                                 | Easy       | LeetCode | Sliding Window + Set                 |
+| 32  | [Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/)                     | Medium     | LeetCode | Sliding Window + Set                 |
