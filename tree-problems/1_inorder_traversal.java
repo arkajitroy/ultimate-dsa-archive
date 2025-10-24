@@ -1,5 +1,6 @@
 import java.util.*;
 
+// Reusable Treenode class
  class TreeNode {
       int val;
       TreeNode left;
@@ -13,9 +14,9 @@ import java.util.*;
       }
  }
 
-// Apprach: Recursive
-// Complexity: O(n) | O(h)
-
+// Approach-1: Recursive approach (most common)
+// Time Complexity: O(n)
+// Space Complexity: O(t) | t = height of the binary tree
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
@@ -33,9 +34,9 @@ class Solution {
     }
 }
 
-// Approach : Iterative - Stack based
-// Complexity: O(n) | O(h)
-
+// Approach-2: Itterative Approach (using stack)
+// Time Complexity: O(n)
+// Space Complexity: O(s) | s = size of the stack
 class Solution2 {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();

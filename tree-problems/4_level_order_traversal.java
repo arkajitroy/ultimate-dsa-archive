@@ -1,5 +1,3 @@
-// BFS
-
 import java.util.*;
 
 class TreeNode {
@@ -15,27 +13,62 @@ class TreeNode {
     }
 }
 
+//Approach 1: Iterative BFS (Using Queue)
+// Time Complexity: O(N)
+// Space Complexity: O(N)
+// This approach traverses level by level using a queue (classic level order).
+
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> result = new ArrayList<>();
-        if (root == null) return result;
-        
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root); // initially add root to queue
+        List<List<Integer>> levels = new ArrayList<>();
+        if (root == null) return levels;
 
-        while(!queue.isEmpty()){
-            int size = queue.size();
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            int levelSize = queue.size();
             List<Integer> currentLevel = new ArrayList<>();
 
-            for(int i=0; i<size; i++){
-                TreeNode node = queue.poll(); // remove the front of queue
-                currentLevel.add(node.val); // add the value to the current level
+            // Process all nodes in the current level
+            for (int i = 0; i < levelSize; i++) {
+                TreeNode currentNode = queue.poll();
+                currentLevel.add(currentNode.val);
 
-                if(node.left != null) queue.add(node.left);
-                if(node.right != null) queue.add(node.right);
+                // Add child nodes for the next level
+                if (currentNode.left != null) queue.offer(currentNode.left);
+                if (currentNode.right != null) queue.offer(currentNode.right);
             }
-            result.add(currentLevel);
+            levels.add(currentLevel);
         }
+        return levels;
+    }
+}
+
+// Approach 2: Recursive DFS (Using Depth Tracking)
+// Time Complexity: O(N)
+// Space Complexity: O(H), where H = height of tree (due to recursion stack)
+
+class Solution2 {
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        traverse(root, 0, result);
         return result;
+    }
+
+    private void traverse(TreeNode node, int depth, List<List<Integer>> result) {
+        if (node == null) return;
+
+        // Create a new level list if we are visiting this depth for the first time
+        if (depth == result.size()) {
+            result.add(new ArrayList<>());
+        }
+
+        // Add the node value to its corresponding depth level
+        result.get(depth).add(node.val);
+
+        // Recurse for left and right subtrees
+        traverse(node.left, depth + 1, result);
+        traverse(node.right, depth + 1, result);
     }
 }

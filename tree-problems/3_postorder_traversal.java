@@ -13,9 +13,32 @@ class TreeNode {
     }
 }
 
-// Approach: Iterative - stack based
-// Complexity: O(n) | O(h) - where h is the height of the tree
+// Approach-1: Recursive approach (most common)
+// Time Complexity: O(n)
+// Space Complexity: O(t) | t = height of the binary tree
+
 class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        if (root == null) return result;
+        compute(root, result);
+        return result;
+    }
+
+    private void compute(TreeNode node, List<Integer> result){
+        if(node == null) return;
+
+        compute(node.left, result);
+        compute(node.right, result);
+        result.add(node.val);
+    }
+}
+
+// Approach-2: Itterative Approach (using stack)
+// Time Complexity: O(n)
+// Space Complexity: O(s) | s = size of the stack
+
+class Solution2 {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) return result;
@@ -37,22 +60,3 @@ class Solution {
     }
 }
 
-// Approach: Recursive
-// Complexity: O(n) | O(h)
-
-class Solution2 {
-    public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> result = new ArrayList<>();
-        if (root == null) return result;
-        compute(root, result);
-        return result;
-    }
-
-    private void compute(TreeNode node, List<Integer> result){
-        if(node == null) return;
-
-        compute(node.left, result);
-        compute(node.right, result);
-        result.add(node.val);
-    }
-}
